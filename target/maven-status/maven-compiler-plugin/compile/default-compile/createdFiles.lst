@@ -1,8 +1,9 @@
 utils/LocationListener.class
 domain/SuspiciousUserBuilder.class
-concurency/ConcurrencyDemo.class
+logFileAnalysis/LogFile.class
 domain/SuspiciousUserListener.class
 bootstrap/Driver.class
+logFileAnalysis/LogAnalysis.class
 domain/SuspiciousUser.class
 bootstrap/GlobalConstants.class
 dataAnalysis/Chart.class
