@@ -1,5 +1,6 @@
 package domain;
 
+import bootstrap.GlobalConstants;
 import utils.LocationListener;
 
 import java.io.BufferedWriter;
@@ -16,10 +17,13 @@ public class SuspiciousUserListener {
        outputFile(filename, suspiciousUsers);
     }
 
-
+    /**
+     * change File path from
+     * GlobalConstants.TEST_AUTH_LOG to GlobalConstants.AUTH_FILE_PATH
+     * at the time of deployment
+    */
     public static void fetchUsers(Vector<SuspiciousUser> suspiciousUsers) throws Exception {
-//        Scanner data = new Scanner(new File("/var/log/auth.log"));
-        Scanner data = new Scanner(new File("src/main/resources/test.txt"));
+        Scanner data = new Scanner(new File(GlobalConstants.TEST_AUTH_LOG));
         HashMap<String,SuspiciousUser> invalidUserHistogram = new HashMap<>();
         while (data.hasNextLine()) {
             String str = data.nextLine();

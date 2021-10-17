@@ -3,6 +3,7 @@ domain/SuspiciousUserBuilder.class
 logFileAnalysis/LogFile.class
 domain/SuspiciousUserListener.class
 bootstrap/Driver.class
+dataAnalysis/ChartHelper.class
 logFileAnalysis/LogAnalysis.class
 domain/SuspiciousUser.class
 bootstrap/GlobalConstants.class
